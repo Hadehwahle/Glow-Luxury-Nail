@@ -221,7 +221,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 30px;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .service-card {
@@ -239,8 +239,8 @@ nav {
 }
 
 .service-icon {
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   background-color: var(--secondary);
   border-radius: 50%;
   display: flex;
@@ -250,9 +250,12 @@ nav {
   color: var(--primary);
   font-size: 2rem;
 }
+.service-icon i {
+  font-size: 1.5rem;
+}
 
 .service-card h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-weight: 500;
 }
 
@@ -261,6 +264,373 @@ nav {
   color: var(--accent);
   margin: 15px 0;
   font-size: 1.2rem;
+}
+
+.page-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("Assets/services.jpg") center/cover no-repeat;
+  padding: 100px 0;
+  height: 450px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-hero h1 {
+  margin-bottom: 15px;
+  color: var(--white);
+}
+
+.page-hero p {
+  color: var(--white);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Services Introduction */
+.services-intro {
+  padding: 80px 0;
+}
+
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.intro-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--accent);
+  position: relative;
+}
+
+.intro-content h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 15px auto 0;
+}
+
+.intro-content p {
+  margin-bottom: 20px;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* Main Services Section */
+.main-services {
+  padding: 60px 0;
+  background-color: var(--light-background);
+}
+
+.main-services h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: var(--accent);
+  position: relative;
+}
+
+.main-services h2:after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary);
+  margin: 15px auto 0;
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 80px;
+  background-color: var(--background);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.service-detail:last-child {
+  margin-bottom: 0;
+}
+
+.service-image {
+  position: relative;
+  height: 100%;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service-text {
+  padding: 40px;
+}
+
+.service-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.service-text p {
+  margin-bottom: 30px;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.service-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.option {
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.option:hover {
+  transform: translateY(-5px);
+}
+
+.option h4 {
+  color: var(--accent);
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.option p {
+  font-size: 14px;
+  color: var(--light-text);
+  margin-bottom: 10px;
+}
+
+.option .price {
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 16px;
+}
+
+.note {
+  font-style: italic;
+  font-size: 14px;
+  color: var(--light-text);
+  margin-bottom: 25px;
+}
+
+/* Add-On Services */
+.add-ons {
+  padding: 80px 0;
+}
+
+.add-ons h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--accent);
+}
+
+.add-ons .section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: var(--light-text);
+}
+
+.add-ons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.add-on-item {
+  background-color: var(--secondary);
+  padding: 25px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: var(--shadow);
+}
+
+.add-on-item:hover {
+  transform: translateY(-8px);
+}
+
+.add-on-icon {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.add-on-item h3 {
+  margin-bottom: 10px;
+  color: var(--accent);
+  font-size: 18px;
+}
+
+.add-on-item p {
+  color: var(--light-text);
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.add-on-item .price {
+  font-weight: 600;
+  color: var(--accent);
+}
+
+/* Booking Information */
+.booking-info {
+  padding: 80px 0;
+  background-color: var(--light-background);
+}
+
+.booking-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.booking-text h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: var(--accent);
+}
+
+.booking-text ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.booking-text li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.booking-text i {
+  color: var(--accent);
+  margin-right: 15px;
+  margin-top: 4px;
+}
+
+.booking-text p {
+  margin-bottom: 25px;
+  color: var(--text);
+}
+
+.btn-large {
+  padding: 15px 35px;
+  font-size: 18px;
+}
+
+.booking-img img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .service-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail:nth-child(even) .service-image {
+    order: -1;
+  }
+
+  .service-image {
+    min-height: 300px;
+  }
+
+  .booking-content {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-img {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 80px 0;
+  }
+
+  .page-hero h1 {
+    font-size: 36px;
+  }
+
+  .service-options {
+    grid-template-columns: 1fr;
+  }
+
+  .service-text {
+    padding: 30px;
+  }
+
+  .add-ons-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .service-detail {
+    margin-bottom: 50px;
+  }
+
+  .service-image {
+    min-height: 250px;
+  }
+
+  .option {
+    padding: 15px;
+  }
+
+  .page-hero h1 {
+    font-size: 32px;
+  }
+
+  .page-hero p {
+    font-size: 18px;
+  }
+
+  .intro-content h2,
+  .main-services h2,
+  .add-ons h2,
+  .booking-text h2 {
+    font-size: 28px;
+  }
 }
 
 /* Gallery Section */
@@ -1092,7 +1462,7 @@ textarea.form-control {
 }
 
 .social-box {
-  background-color: var(--secondary);
+  background-color: var(--light);
   padding: 30px;
   border-radius: 10px;
   text-align: center;
@@ -1182,85 +1552,6 @@ textarea.form-control {
   .page-banner h1 {
     font-size: 30px;
   }
-}
-
-/* Instagram Feed Section */
-.instagram-feed {
-  padding: 60px 0;
-  text-align: center;
-}
-
-.instagram-feed h2 {
-  font-size: 2rem;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.instagram-feed h2:after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 70px;
-  height: 3px;
-  background-color: var(--accent);
-}
-
-.instagram-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 10px;
-}
-
-.instagram-item {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 100%; /* Create a square */
-}
-
-.instagram-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.5s;
-}
-
-.instagram-item:hover img {
-  transform: scale(1.1);
-}
-
-.instagram-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(214, 107, 139, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.instagram-item:hover .instagram-overlay {
-  opacity: 1;
-}
-
-.instagram-overlay i {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.instagram-btn {
-  margin-top: 30px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
 }
 
 /* Footer */
@@ -1425,7 +1716,7 @@ footer {
 /* Team Section */
 .team-member {
   margin: auto;
-  width: 60%;
+  width: 90%;
   background-color: var(--white);
   border-radius: 10px;
   overflow: hidden;
@@ -1439,8 +1730,7 @@ footer {
 }
 
 .team-img {
-  height: 300px;
-
+  height: 400px;
   overflow: hidden;
 }
 
@@ -1448,6 +1738,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: top;
   transition: transform 0.5s ease;
 }
 
@@ -1684,10 +1975,6 @@ footer {
 
   .about-img:before {
     display: none;
-  }
-
-  .instagram-grid {
-    grid-template-columns: repeat(4, 1fr);
   }
 }
 
